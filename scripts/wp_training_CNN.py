@@ -94,8 +94,8 @@ history = model.fit_generator(train_generator,
 target_dir = '../weather_pred/'
 if not os.path.exists(target_dir):
   os.mkdir(target_dir)
-vgg16_model.save(target_dir + 'CNN_model_256.h5')
-vgg16_model.save_weights(target_dir + 'CNN_weights_256.h5')
+model.save(target_dir + 'CNN_model_256.h5')
+model.save_weights(target_dir + 'CNN_weights_256.h5')
 
 # In[15]:
 
